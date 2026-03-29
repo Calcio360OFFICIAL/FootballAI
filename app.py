@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestClassifier
 app = Flask(__name__)
 
 # Configurazione (Usa la tua API Key di Football-Data.org)
-API_KEY = os.getenv("96f89bc87200428ba97b0273686344d9")
+API_KEY = os.getenv("FOOTBALL_API_KEY")
 BASE_URL = "https://api.football-data.org/v4/"
 
 def get_live_data(limit=100):
